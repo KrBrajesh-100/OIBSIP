@@ -103,8 +103,3 @@
     font-weight: 600;
 
 }
-.image img {
-    max-width: 350px;
-    object-fit: cover;
-    position: static;
-}
