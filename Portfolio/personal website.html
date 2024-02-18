@@ -2,37 +2,185 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="sytle.css">
+    <title>Personal Portfolio</title>
+    <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css of my own -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Portfolio </a>
+        <a href="#" class="logo">PORTFOLIO PAGE</a>
+        </a>
+        <i class='bx bx-menu' id="menu-icon"></i>
         <nav class="navbar">
-            <a href="#"> Home</a>
-              <a href="#"> About</a>
-                <a href="#"> contact</a>
-                 
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
-    <section class="home">
+
+    <!-- home section designing  -->
+    <section class="home" id="home">
         <div class="home-content">
-            <h3> Hello, It's Me</h3>
+            <h3>Hello Everyone! It's Me Here.</h3>
             <h1>BRAJESH KUMAR</h1>
-            
-            <p>I'm a web developer working as a intern at OIBSIP
-                <br> expertise in making website design and frontend design.
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p> Full-stack development is the end-to-end development of applications.<br>
+                It includes both the front end and back end of an application. And,<br>
+                A full stack developer is one who can  single-handedly implement <br>
+                both the front-end and back-end workflows.
             </p>
-            <div class="home-sci">
-             <a href="#"><i class='bx bxl-whatsapp'></i> </a> 
-                <a href="#"> <i class='bx bxl-instagram' ></i></a> 
-                 <a href="#"><i class='bx bxl-quora' ></i> </a> 
-           
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/brajesh-kumar-0263a921b/"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-telegram'></i></a>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/krbrajesh313/?next=%2F"><i class='bx bxl-instagram'></i></a>
+                
             </div>
-            <a href="a" class="btn-box"> More about me</a>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="home-image">
+            <img src="IMAGES\BACKGROUND_1.jpg" alt="">
         </div>
     </section>
+
+    <!-- about section designing -->
+    <section class="about" id="about">
+        <div class="about-image">
+            <img src="IMAGES\ABOUT.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <p>
+                What can I say, I love my job! 
+                I like to bring the best of both worlds into my design which is known for its 
+                sopahasticated simplicity and thoughtful details. I am passionate about helping
+                my clients bringing their brands to life and telling their stoties virtully. 
+                I love to talk with you and our unique. I always try to be more informative.
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- portfolio section designing -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest<span>Projects</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="IMAGES\portfolio1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>WEB DESIGN</h4>
+                    <p>this is the place where you can see my all designs made.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="IMAGES\portfolio2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>WEB DESIGN</h4>
+                    <p>this is the place where you can see my all designs made.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="IMAGES\portfolio3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>WEB DESIGN</h4>
+                    <p>this is the place where you can see my all designs made.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="IMAGES\portfolio4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>WEB DESIGN</h4>
+                    <p>this is the place where you can see my all designs made.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="IMAGES\portfolio6.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>WEB DESIGN</h4>
+                    <p>this is the place where you can see my all designs made.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="IMAGES\portfolio5.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>WEB DESIGN</h4>
+                    <p>this is the place where you can see my all designs made.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- contact section designing -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me !!</span></h2>
+        <form name="submit-to-google-sheet">
+            <div class="input-box">
+                <input type="text" name="Name" placeholder="Full Name" required>
+                <input type="email" name="Email" placeholder="E-mail ID" required>
+                <input type="number" name="Mobile Number" placeholder="Mobile Number" required>
+                <input type="text" name="Email Subject" placeholder="E-mail Subject">
+            </div>
+            <!-- <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                 <input type="text" placeholder="E-mail Subject">
+            </div>  -->
+            <textarea name="Message" id="" cols="30" rows="8" placeholder="Your Message"></textarea>
+           <!-- <input type="submit" value="send the message" class="btn"> -->
+           <button type="submit" class="btn">Submit</button>
+        </form>
+
+    </section>
+    <!-- footer designing -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by BK | All rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bxs-chevrons-up'></i></a>
+        </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- running typing on home with js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- custom js  -->
+    <script src="script.js">
+
+    </script>
+    <!-- contact form sheet making -->
+    <script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbyAjS1UMk5BB76VjkOLXDVnmh1cEUiajMo-ZK935xnW8Q7O0rFGCTQ90qkeV77yG4Wd/exec URL>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            })
+        .catch(error => console.error('Error!', error.message))
+    })
+    
+    </script>
 </body>
 </html>
